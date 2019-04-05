@@ -8,7 +8,7 @@
         <a [href]="user.html_url" target="_blank">User Page</a>
       </p>
       <p>
-        <a [routerLink]="[user.login, 'repositories']">My Repositories</a>
+        <a [routerLink]="['/repositories', user.login]">My Repositories</a>
       </p>
     </div>
   </div>
