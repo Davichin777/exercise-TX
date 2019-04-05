@@ -2,11 +2,11 @@
   <div class="content-users col-md-3" *ngFor="let user of usersGithub">
     <div class="avatar">
       <img [src]="user.avatar_url" alt="">
+      <span class="name-user">{{ user.login }}</span>
     </div>
     <div class="details">
       <p>
-        <a [href]="user.html_url" target="_blank">See details of:</a> 
-        <span class="name-user">{{ user.login }}</span>
+        <a [href]="user.html_url" target="_blank">See details</a> 
       </p>
       <p>
         <a [routerLink]="['/repositories', user.login]">My Repositories</a>
