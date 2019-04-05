@@ -5,7 +5,8 @@
     </div>
     <div class="details">
       <p>
-        <a [href]="user.html_url" target="_blank">User Page</a>
+        <a [href]="user.html_url" target="_blank">See details of:</a> 
+        <span class="name-user">{{ user.login }}</span>
       </p>
       <p>
         <a [routerLink]="['/repositories', user.login]">My Repositories</a>
