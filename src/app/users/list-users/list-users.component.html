@@ -1,11 +1,15 @@
 <div class="row">
-  <div class="content-users" *ngFor="let user of usersGithub">
+  <div class="content-users col-md-3" *ngFor="let user of usersGithub">
     <div class="avatar">
       <img [src]="user.avatar_url" alt="">
     </div>
     <div class="details">
-      <a [href]="user.html_url" target="_blank">User Page</a>
-      <a [routerLink]="[user.login, 'repositories']">My Repositories</a>
+      <p>
+        <a [href]="user.html_url" target="_blank">User Page</a>
+      </p>
+      <p>
+        <a [routerLink]="[user.login, 'repositories']">My Repositories</a>
+      </p>
     </div>
   </div>
 </div>
